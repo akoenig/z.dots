@@ -6,8 +6,12 @@
 # Author: André König <andre.koenig@posteo.de>
 #
 
-git clone https://github.com/rupa/z.git $HOME/.z
+mkdir -p $HOME/.apps
 
-dots_profile_add "source $HOME/.z/z.sh"
+dots_output_info "z is not installed. Installing it ..."
+
+git clone https://github.com/rupa/z.git $HOME/.apps/z
+
+dots_profile_add "source $HOME/.apps/z/z.sh"
 
 dots_output_success "Installed `z`."
