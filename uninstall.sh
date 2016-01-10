@@ -7,5 +7,6 @@
 #
 
 rm -rf $HOME/.apps/z
+rm $HOME/.z.*
 
 dots_output_success "Uninstalled `z`."
